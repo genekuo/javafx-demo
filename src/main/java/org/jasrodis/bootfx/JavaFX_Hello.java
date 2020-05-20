@@ -8,6 +8,7 @@ import javafx.event.EventHandler;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.StackPane;
+import javafx.scene.web.WebView;
 import javafx.stage.Stage;
 
 public class JavaFX_Hello extends Application {
@@ -50,6 +51,15 @@ public class JavaFX_Hello extends Application {
 
     @Override
     public void start(Stage primaryStage) {
+
+        WebView wv = new WebView();
+        wv.getEngine().load("https://stackoverflow.com/questions/tagged/javafx");
+        StackPane root = new StackPane(wv);
+        primaryStage.setTitle("JavaFX on SO");
+        primaryStage.setScene(new Scene(root, 400, 250));
+        primaryStage.show();
+
+        /*
         Button btn = new Button();
         btn.setText("Say 'Hello World'");
         btn.setOnAction(new EventHandler<ActionEvent>() {
@@ -63,12 +73,12 @@ public class JavaFX_Hello extends Application {
         StackPane root = new StackPane();
         root.getChildren().add(btn);
 
-        //Scene scene = new Scene(root, 300, 250);
         Scene scene = new Scene(root, Integer.parseInt(width), Integer.parseInt(height));
 
         primaryStage.setTitle("Hello World!");
         primaryStage.setScene(scene);
         primaryStage.show();
+         */
     }
 
     public static void main(String[] args) {

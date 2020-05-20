@@ -20,7 +20,6 @@ org/jasrodis/bootfx/BootFxApp.class
 org/jasrodis/bootfx/gui/form/programmatic/FormConstants.class
 org/jasrodis/bootfx/gui/form/programmatic/FormView.class
 org/jasrodis/bootfx/ApplicationModel$1.class
-org/jasrodis/bootfx/JavaFX_Hello$1.class
 org/jasrodis/bootfx/repository/DataEntryRepository.class
 org/jasrodis/bootfx/JavaFX_Hello.class
 org/jasrodis/bootfx/ApplicationModel$State.class

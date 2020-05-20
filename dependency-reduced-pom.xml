@@ -62,7 +62,7 @@
                 </transformer>
                 <transformer />
                 <transformer>
-                  <mainClass>org.jasrodis.bootfx.BootFxApp</mainClass>
+                  <mainClass>org.jasrodis.bootfx.JavaFX_Hello</mainClass>
                 </transformer>
               </transformers>
             </configuration>
